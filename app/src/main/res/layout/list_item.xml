@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="name"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+
+    <View
+        android:id="@+id/name_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/name_line"
+        android:text="age"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+
+    <View
+        android:id="@+id/age_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@+id/age"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/age_line"
+        android:text="sex"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+
+    <View
+        android:id="@+id/sex_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@+id/sex"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/sex_line"
+        android:text="height"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+
+    <View
+        android:id="@+id/height_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@+id/height"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/idcard"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/height_line"
+        android:text="idcard"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        />
+</RelativeLayout>

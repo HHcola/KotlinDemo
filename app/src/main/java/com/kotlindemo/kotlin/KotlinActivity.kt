@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.kotlindemo.R
+import com.kotlindemo.kotlin.visibilitymodifiers.Person
+import java.util.*
+import kotlin.collections.ArrayList
 
 class KotlinActivity : Activity() {
 
@@ -28,9 +31,25 @@ class KotlinActivity : Activity() {
             "Sun 6/29 - Sunny - 20/7"
     )
 
+    private var personList : ArrayList<Person> = ArrayList()
+
+
     private fun init() {
         val forecastList = findViewById<RecyclerView>(R.id.forecast_list)
         forecastList.layoutManager = LinearLayoutManager(this)
-        forecastList.adapter = KotlinListAdapter(items)
+//        forecastList.adapter = KotlinListAdapter(items)
+        setData()
+        forecastList.adapter = KotlinPersonListAdapter(personList!!)
+    }
+
+    private fun setData() = (0..10).forEach {
+        var person = Person("xiaoming$it")
+        var ra = Random()
+        person.age = it + 10
+        person.height = 160 + it * 2
+        person.sex = if (it % 2 == 0) 1 else 2
+        person.idcard = it.toString()
+        personList.add(person)
     }
 }
+

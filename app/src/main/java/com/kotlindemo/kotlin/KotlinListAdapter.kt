@@ -7,7 +7,8 @@ import android.widget.TextView
 /**
  * Created by timothyhe on 2017/12/8.
  */
-class KotlinListAdapter(private val items: List<String>) :
+//class KotlinListAdapter(private val items: List<String>) :
+class KotlinListAdapter internal constructor(private val items: List<String>):
         RecyclerView.Adapter<KotlinListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder
